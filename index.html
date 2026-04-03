@@ -14,50 +14,63 @@
 
 <div class="menu-topo">
 
-    <span><i class="fa-solid fa-user"></i>Usuarios</span>
+    <span><i class="fa-solid fa-user"></i>Usuario</span>
     <div class="top-icons">
     <div class="notificacao">
     <i class="fa-solid fa-bell"></i>
-    <span class="badge"> 3 </span>
+    <span class="badge"> 3 </span> <!-- hilcer precisar fazer a notificação no J.S-->
 
         </div>
     </div>
 </div>
    
 </nav> 
+<div class="conteine">
 
-<nav class="navbar.html"> 
-<h1>Bem vinsto ao sistema sigac</h1>
-
-    <div class="conteine">
+  
     <aside class="siderbar">
-    
-<ul>
+        <ul>
+            <li><a href="dachbord.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+            <li><a href="chat.html"><i class="fa-solid fa-comments"></i> Chat</a></li>
+            <li><a href="atribuições.html"><i class="fa-solid fa-file"></i>Atribuições </a></li>
+            <li><a href="calendario.html"><i class="fa-solid fa-calendar"></i> Calendário</a></li>
+            <li><a href="calendario.html"><i class="fa-solid fa-calendar"></i> Equipes</a></li>
 
-<li>
-    <a href="dachbord.html">
-    <i class="fa-solid fa-house"></i> Dashboard </a>
-</li> 
-    
-<li>   
-    <a href="chat.html">
-    <i class="fa-solid fa-comments"></i> Chat </a> 
-</li>
-    
-<li>
-    <a href="atividades.html">
-    <i class="fa-solid fa-file"></i> Atividades </a>
-</li> 
-          
-<li>
-        <a href="calendario.html">
-        <i class="fa-solid fa-calendar"></i> Calendário  </a>
-</li>
-   
+        </ul> 
+    </aside>
+
+<!-- hilcer precisar colcoar no js as dicplinas novas . todas vao aparecer lado a lado como no teams cada uma 
+  precisar constar o nome da discplina  e o nome do  professor -->
+    <section class="diciplinas">
+        <h2>Disciplinas</h2>
+        <div class="lista-disciplinas" id="lista-disciplinas">
+</div>
+
+    </section>
 
 
-</ul> 
-</aside>
+<!-- hilce  as atividades vai ta relacionada com js . todos os que lancarem um curso ou atividade vai aparecer
+  no sino  de notificação  e sempre q um professor lancar vai aparecer  outra tela mostrando outra notificação 
+  como as atribuiçoes do teamns -->
+  
+<main class="conteudo"> 
+    <h2>atividades</h2>
+    <div id="lista-atividades" class="ativiudade-container"></div>   
+</main>
+
+<div id="modal" class="modal hidden"> 
+    <div class="modal-content">
+        <span id="fechar">&item;</span>
+        <h2 id="modal-titulo"></h2>
+        <p id="modal-descrição"></p>
+        <p><strong>Entregar</strong> <span id="modal-data"></span></p>
+        <input type="file" id="arquivo" />
+        <button id="enviar">Enviar Atividade </button>
+    </div>
+    </div>
+
+</div>
+
 
 <main class="conteudo">
     <h2></h2>
